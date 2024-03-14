@@ -1,6 +1,3 @@
-
-import java.util.*;
-
 /**
  * 
  */
@@ -40,6 +37,10 @@ public class Persona {
      */
     public Persona(String dni, String nombre, String apellidos, int edad) {
         // TODO implement here
+    	this.dni = dni;
+    	this.nombre = nombre;
+    	this.apellidos = apellidos;
+    	this.edad = edad;
     }
 
     /**
@@ -47,7 +48,7 @@ public class Persona {
      * @param dni: String
      */
     public void setDni(String dni) {
-        // TODO implement here
+        this.dni = dni;
     }
 
     /**
@@ -55,7 +56,7 @@ public class Persona {
      * @param nombre: String
      */
     public void setNombre(String nombre) {
-        // TODO implement here
+        this.nombre = nombre;
     }
 
     /**
@@ -63,7 +64,7 @@ public class Persona {
      * @param apellidos: String
      */
     public void setApellidos(String apellidos) {
-        // TODO implement here
+        this.apellidos = apellidos;
     }
 
     /**
@@ -71,7 +72,7 @@ public class Persona {
      * @param edad: int
      */
     public void setEdad(int edad) {
-        // TODO implement here
+        this.edad = edad;
     }
 
     /**
@@ -108,6 +109,10 @@ public class Persona {
     public int getEdad() {
         // TODO implement here
         return edad;
+    }
+    
+    public String toString() {
+    	return "nombre: " + this.nombre + " apellidos: " + this.apellidos + " DNI: " + this.dni + " edad: " + this.edad;
     }
 
 }
