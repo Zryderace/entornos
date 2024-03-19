@@ -9,26 +9,21 @@ public class Rectangulo {
     /**
      * Default constructor
      */
+	
+    private int base;
+
+    private int altura;
+
     public Rectangulo() {
     	this.altura = 1;
     	this.base = 1;
     }
 
     /**
-     * 
-     */
-    private int base;
-
-    /**
-     * 
-     */
-    private int altura;
-
-    /**
      * @param base 
      * @param altura
      */
-    public void Rectangulo(int base, int altura) {
+    public Rectangulo(int base, int altura) {
         // TODO implement here
     	this.altura = altura;
     	this.base = base;
@@ -62,7 +57,8 @@ public class Rectangulo {
     }
 
     /**
-     * @param altura settea altura
+     * settea altura
+     * @param altura
      */
     public void setAltura(int altura) {
         // TODO implement here
