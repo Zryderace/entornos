@@ -1,10 +1,5 @@
 package modelos;
 
-import java.util.*;
-
-/**
- * 
- */
 public class Rectangulo {
 
     /**
