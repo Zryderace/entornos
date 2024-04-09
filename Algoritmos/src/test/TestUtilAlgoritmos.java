@@ -15,7 +15,7 @@ class TestUtilAlgoritmos {
 	}
 	
 	@Test
-	void Algoritmo() {
+	void Sumatorio() {
 		int numeroEsperado = 10;
 		int numeroObtenido = Algoritmos.sumatorio(4);
 		assertEquals(numeroEsperado,numeroObtenido);

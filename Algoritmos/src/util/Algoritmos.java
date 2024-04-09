@@ -10,9 +10,9 @@ public abstract class Algoritmos {
 	 */
 	public static int sumatorio(int numero) {
 		
-		int total = 1;
+		int total = 0;
 		
-		for (int i = 2; i < numero+1; i++) {
+		for (int i = 0; i < numero+1; i++) {
 			total += i;
 		}
 		return total;
@@ -24,9 +24,9 @@ public abstract class Algoritmos {
 	 * @return el factorial del numero especificado
 	 */
 	public static int factorial(int numero) {
-		int factorial = 2;
+		int factorial = 1;
 		
-		for (int i = 3; i <= numero; i++) {
+		for (int i = 1; i <= numero; i++) {
 			factorial *= i;
 		}
 		
