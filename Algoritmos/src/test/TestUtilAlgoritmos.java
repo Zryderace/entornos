@@ -21,6 +21,11 @@ class TestUtilAlgoritmos {
 		assertEquals(numeroEsperado,numeroObtenido);
 	}
 	
-
+	@Test
+	void Factorial() {
+		int numeroEsperado = 24;
+		int numeroObtenido = Algoritmos.factorial(4);
+		assertEquals(numeroEsperado,numeroObtenido);
+	}
 
 }
