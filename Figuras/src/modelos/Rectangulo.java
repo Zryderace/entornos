@@ -1,81 +1,62 @@
 package modelos;
+/**
+ * clase rectangulo - permite crear rectangulos y calcular su area y perimetro
+ * 
+ * @author alejandroM
+ */
+public class Rectangulo extends Figura{
 
-public class Rectangulo {
-
-    /**
-     * Default constructor
-     */
-	
     private int base;
-
     private int altura;
-
+    
+    /**
+     * Constructor que crea un rectangulo con base y altura 1 en metros
+     */
     public Rectangulo() {
     	this.altura = 1;
     	this.base = 1;
     }
 
     /**
-     * @param base 
-     * @param altura
+     * constructor que crea un rectangulo con la base y la altura que recibe en metros
+     * 
+     * @param base la base del rectangulo en metros
+     * @param altura la altura del rectangulo en metros
      */
     public Rectangulo(int base, int altura) {
-        // TODO implement here
     	this.altura = altura;
     	this.base = base;
     }
 
-    /**
-     * devuelve base
-     * @return
-     */
     public int getBase() {
-        // TODO implement here
         return base;
     }
 
-    /**
-     * devuelve altura
-     * @return
-     */
     public int getAltura() {
-        // TODO implement here
         return altura;
     }
 
-    /**
-     * settea base
-     * @param base
-     */
     public void setBase(int base) {
-        // TODO implement here
     	this.base = base;
     }
 
-    /**
-     * settea altura
-     * @param altura
-     */
     public void setAltura(int altura) {
-        // TODO implement here
     	this.altura = altura;
     }
 
     /**
-     * devuelve base x altura
-     * @return
+     * @see modelos.Figura#area()
      */
-    public int area() {
-        // TODO implement here
+    @Override
+    public double area() {
         return base*altura;
     }
 
     /**
-     * devuelve 2B + 2A
-     * @return
+     * @see modelos.Figura#perimetro()
      */
-    public int perimetro() {
-        // TODO implement here
+    @Override
+    public double perimetro() {
         return 2*base+2*altura;
     }
 
