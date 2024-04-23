@@ -11,7 +11,6 @@ public class Persona {
     public Persona() {
     }
 
-
     /**
      * 
      */
@@ -97,17 +96,22 @@ public class Persona {
     /**
      * dice si es menor de edad, mayor de edad o jubilado dependiendo de su edad
      * 
+     * @return String si la persona es < de edad, > de edad, o jubilado
      */
     
-    public void mostrarEdad(){
+    public String mostrarEdad(){
+    	
+    	String frase;
     	
     	if (edad<18) {
-			System.out.println("Menor de edad");
-		} else if (edad>=65) {
-			System.out.println("Jubilado");
+			frase = "Menor de edad";
+		} else if (edad>65) {
+			frase = "Jubilado";
 		} else {
-			System.out.println("Mayor de edad");
+			frase = "Mayor de edad";
 		}
+    	
+    	return frase;
     	
     }
     
