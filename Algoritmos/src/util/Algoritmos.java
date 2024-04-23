@@ -10,6 +10,10 @@ public abstract class Algoritmos {
 	 */
 	public static int sumatorio(int numero) {
 		
+		if (numero<0) {
+			throw new IllegalArgumentException("El numero debe ser  => 0");
+		}
+		
 		int total = 0;
 		
 		for (int i = 0; i < numero+1; i++) {
